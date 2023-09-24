@@ -92,7 +92,7 @@ def get_response(prompt: Prompt, filename: str) -> List[str]:
             json.dump(data, f, indent=4)
         logging.debug("Received response from openai")
     except Exception as e:
-        responses = "💩 OpenAI is being stupid, please try again hahahahahaha"
+        responses = "Server load are slow, please wait. Or you can considering to upgrade your main server"
         logging.error(f"Error occurred while getting response from openai: {e}")
     return responses
 
